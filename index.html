@@ -72,7 +72,7 @@
 									As Galactic archaeologists, we use stars as fossils to study one of the fundamental questions of astronomy, the formation and evolution of galaxies, like the Milky Way.
 									Studying the spatial, kinematic and chemical composition of vast numbers of stars can reveal endless information about our Galaxy's and the universe's history.<br> <br>
 									Currently, I am leading the Chemical Origins of Metal-poor Bulge Stars (COMBS) survey.
-									The first installment of this survery was published in 2019.
+									The first two installments of this survey have been published in MNRAS.
 									I have also led a paper detecting ~2.6 million red clump stars from photoemtry using deep learning. See the links below to learn more.
 								  	</p>
 									<p><a href="https://ui.adsabs.harvard.edu/public-libraries/wYv3VxcMRK2TRnvLk3xKkw"> All Publications (Link to ADS)</a> </p>
@@ -82,15 +82,17 @@
 
 									<section class="tiles">
 
-										<article class="style2">
+										<article class="style3">
 											<span class="image">
-												<img src="images/alpha_final.png" alt="" />
+												<img src="images/frac_stay.png" alt="" />
 											</span>
-											<a href="#COMBS">
-												<h2>COMBS</h2>
+											<a href="#COMBSII">
+												<h2>COMBS II</h2>
 												<div class="content">
-													<p>The COMBS survey I: Chemical Origins of Metal-Poor Stars in the Galactic Bulge</p>
+													<p>he COMBS survey II: Distinguishing the Metal-Poor Bulge from the Halo Interlopers </p>
 												</div>
+
+
 											</a>
 										</article>
 
@@ -101,12 +103,28 @@
 											<a href="#Red Clump">
 												<h2>Red Clump</h2>
 												<div class="content">
-													<p>A Pristine Sample of 4.2 Million Red Clump Stars</p>
+													<p>From the Inner to Outer Milky Way: A Photometric Sample of 2.6 Million Red Clump Stars</p>
 												</div>
 
 
 											</a>
 										</article>
+
+										<article class="style2">
+											<span class="image">
+												<img src="images/alpha_final.png" alt="" />
+											</span>
+											<a href="#COMBSI">
+												<h2>COMBS I</h2>
+												<div class="content">
+													<p>The COMBS survey I: Chemical Origins of Metal-Poor Stars in the Galactic Bulge</p>
+												</div>
+											</a>
+										</article>
+
+
+
+
 
 									</section>
 								</div>
@@ -162,7 +180,69 @@
 
 
 							<!-- COMBS -->
-							<section id="COMBS" class="main">
+							<section id="COMBSII" class="main">
+
+									<div class="content">
+										<header class="major">
+											<h2>The COMBS survey II: Distinguishing the Metal-Poor Bulge from the Halo Interlopers</h2>
+										<a href="https://arxiv.org/pdf/2009.03886.pdf">Full paper</a>
+										</header>
+										<p>
+										Simulations predict that the metal-poor stars in the Galactic bulge are some of the oldest stars in the Galaxy.
+										However, in order to determine if this stars are truly ancient we must undertand their origins.
+										It is currently unknown if the metal-poor stars in the bulge are halo interlopers, a unique accreted population, part of the boxy/peanut-shaped bulge or a classical bulge population.
+										By studying their chemo-dynamical properties we can begin to contrain their origins and importance in our Galaxy's formation history.</p>
+										<p><span class="image right"><img src="images/frac_stay.pdf" alt="" /></span>
+										In this work, we analyze data from the VLT/FLAMES spectrograph of 523 stars in the Galactic bulge targeted using SkyMapper photometry.
+										We take a probabilistic orbit analysis approach to determine whether a given star will stay confined to the bulge as opposed to being a halo interloper, which is just passing through the bulge.
+										We also determine metallicity estimates for 473 stars using the Ca-II NIR Triplet.
+									 	We find that ~50% of metal-poor stars currently in the bulge will stay confined and that this fraction decreases steadily with decreasing metallicity (see figure to the right).</p>
+										<p><span class="image left"><img src="images/sigr_l.pdf" alt="" /></span>
+										Previous work on metal-poor stars in the Galactic bulge, which did not separate the confined stars from the halo interlopers, found evidence for a classical bulge population using the line-of-sight velocity dispersion.
+										We show that when the halo interlopes are removed, the confined stars show the signature of a boxy/peanut-shaped (B/P) bulge without the need to invoke a classical bulge population.
+										However, we also find an interesting overabundance of counter-rotating stars amoung the most metal-poor stars in our sample that is not explained by current B/P bulge models.
+										In total, our work demonstrates that the metal-poor bulge consists of atleast two populations: the halo interlopers and confined B/P population.
+
+										</p>
+
+
+
+								</div>
+							</section>
+							<!-- Red Clump -->
+
+							<section id="Red Clump" class="main">
+									<div class="content">
+										<header class="major">
+											<h2>From the Innner to Outer Milky Way: A Photometric Sample of 2.6 Million Red Clump Stars</h2>
+											<a href="https://arxiv.org/pdf/2002.02961.pdf">Full paper</a>
+										</header>
+										<p>
+											Red clump stars are standard candles proven to give more accurate distance measurements than parallaxes at distances > 3 kpc.
+											However, identifying large pristine samples of red clump stars has historically been difficult.
+
+											The asteroseismic parameters, period spacing and frequency separation clearly separate helium core-burning red clump stars from inert core red giant branch stars.
+											Recently, Hawkins, et al (2018) demonstrated that the period spacing and frequency separation can be derived from stellar spectra.
+											Specifically, red clump stars can be selected from the difference in the carbon to nitrogen ratio due to mixing that occurs at the top of the red giant branch.</p>
+
+											<p><span class="image left"><img src="images/roc.png" alt="" /></span>
+											In this work, we select red clump stars from the ~ 200 million stars which have photometry from 2MASS, AllWISE, <i>Gaia</i>, and Pan-STARRS.
+											We derive the effective temperature, surface gravity, frequency seperation, and period spacing of these stars from 13 bands of photometry and parallax using a mixture density network.
+											We achieve a contamination rate of ~20% for a sample of ~405,000 red clump stars.
+											This is similar to the contamination rate found when selecting red clump stars using effective temperature and surface gravity derived from high-resolution spectra.
+											We also present a catalog of ~2.6 million red clump stars with a contamination rate of ~33%.</p>
+										<p><span class="image right"><img src="images/dists.png" alt="" /></span>
+											The Figure on the right shows the reverse cumulative distribution of the derived distances for this sample.
+											Having been photometrically derived, our sample is significantly less confined to nearby stars than the largest spectroscopic sample (Ting et al, 2018).
+											Therefore, our sample provides more precise distances where they really matter, in the distant Galaxy where there are many current questions about the structure and where distances are most difficult to derive.
+											Our sample contains over 1.8 million stars with distances more precise than the distance given by <i>Gaia</i> parallaxes.
+											Our sample reaches farther into the Galactic halo and Galactic center than previous pristine red clump samples with our most distant red clump star at a distance of ~ 20 kpc.</p>
+
+								</div>
+							</section>
+
+							<!-- COMBS -->
+							<section id="COMBSI" class="main">
 
 									<div class="content">
 										<header class="major">
@@ -193,37 +273,7 @@
 								</div>
 							</section>
 
-							<!-- Red Clump -->
 
-							<section id="Red Clump" class="main">
-									<div class="content">
-										<header class="major">
-											<h2>From the Innner to Outer Milky Way: A Pristine Sample of 4.3 Million Red Clump Stars</h2>
-											<a href="https://arxiv.org/pdf/2002.02961.pdf">Full paper</a>
-										</header>
-										<p>
-											Red clump stars are standard candles proven to give more accurate distance measurements than parallaxes at distances > 3 kpc.
-											However, identifying large pristine samples of red clump stars has historically been difficult.
-
-											The asteroseismic parameters, period spacing and frequency separation clearly separate helium core-burning red clump stars from inert core red giant branch stars.
-											Recently, Hawkins, et al (2018) demonstrated that the period spacing and frequency separation can be derived from stellar spectra.
-											Specifically, red clump stars can be selected from the difference in the carbon to nitrogen ratio due to mixing that occurs at the top of the red giant branch.</p>
-
-											<p><span class="image left"><img src="images/roc.png" alt="" /></span>
-											In this work, we select red clump stars from the ~ 200 million stars which have photometry from 2MASS, AllWISE, <i>Gaia</i>, and Pan-STARRS.
-											We derive the effective temperature, surface gravity, frequency seperation, and period spacing of these stars from 13 bands of photometry and parallax using a mixture density network.
-											We achieve a contamination rate of ~20% for a sample of ~405,000 red clump stars.
-											This is similar to the contamination rate found when selecting red clump stars using effective temperature and surface gravity derived from high-resolution spectra.
-											We also present a catalog of ~2.6 million red clump stars with a contamination rate of ~33%.</p>
-										<p><span class="image right"><img src="images/dists.png" alt="" /></span>
-											The Figure on the right shows the reverse cumulative distribution of the derived distances for this sample.
-											Having been photometrically derived, our sample is significantly less confined to nearby stars than the largest spectroscopic sample (Ting et al, 2018).
-											Therefore, our sample provides more precise distances where they really matter, in the distant Galaxy where there are many current questions about the structure and where distances are most difficult to derive.
-											Our sample contains over 1.8 million stars with distances more precise than the distance given by <i>Gaia</i> parallaxes.
-											Our sample reaches farther into the Galactic halo and Galactic center than previous pristine red clump samples with our most distant red clump star at a distance of ~ 20 kpc.</p>
-
-								</div>
-							</section>
 
 					</div>
 
