@@ -222,6 +222,38 @@
 					  </div>
 							</section>
 							<!-- Bar-->
+
+							<!-- COMBS -->
+							<section id="cemp" class="main">
+
+									<div class="content">
+										<header class="major">
+											<h2>Over 2 Million Carbon-Enhanced Metal-Poor stars from BP/RP Spectra in <i>Gaia</i> DR3</h2>
+										<a href="https://arxiv.org/pdf/2206.08299.pdf">Full paper</a>
+										<a href="https://www.wired.com/story/the-gaia-mission-keeps-unlocking-secrets-of-the-galaxy/"> WIRED magazine article where this work is highlighted
+										</header>
+										<p>
+
+
+										Carbon-enhanced metal-poor (CEMP) stars make-up almost a third of stars with [Fe/H]< -2, although their origins are still poorly understood.
+										It is highly likely that one type of CEMP star (CEMP- s  stars) is tied to mass-transfer events taking place in binary stars, while another type (CEMP-no stars) has been suggested to be enriched by the nucleosynthetic yields of the first generations of stars.
+										Historically, studies of CEMP stars have been explored in the Galactic halo, but more recently they have also been detected in the thick disk and bulge components of the Milky Way.
+										Gaia  DR3 has provided an unprecedented sample of over 200 million low-resolution (R ≈  50) spectra from the BP and RP photometers. </p>
+
+										<p><span class="image right"><img src="images/ext_noise.pdf" alt="" /></span>
+										In this work, we use XGBoost to classify these spectra and detect the largest all-sky sample of CEMP stars to date.
+										In total, we find over 2 million CEMP stars, with a contamination rate of 5%.</p>
+
+										<p><span class="image left"><img src="images/map.pdf" alt="" /></span>
+										This sample spans from the inner to outer Milky Way with distances as close as 0.4 kpc from the Galactic center, and as far as > 30 kpc.
+										We also find that 0.28% of these stars are identified as non-single stars in  Gaia  DR3.
+										By providing the largest, uniformly analyzed sample of CEMP stars we can further investigate the frequency of CEMP- s  and CEMP-no stars throughout the Galaxy and constrain the origins of these classes of stars. </p>
+
+
+
+
+								</div>
+							</section>
 							<section id="bar" class="main">
 
 									<div class="content">
@@ -232,22 +264,22 @@
 										<p>
 
 
+										The dynamics of the inner Galaxy contain crucial clues for untangling the evolutionary history of the Milky Way.
+										However, the inner Galaxy's gravitational potential is poorly constrained, partly because the length of the Galactic bar is currently under debate with length estimates ranging from 3.5-5 kpc.
 										This work searches for another way to constrain the length of the Galactic bar using the full 6-D phase-space information of stars available with <i>Gaia</i> and APOGEE.
 										Specifically, we investigate whether we can determine the length of the bar by finding the last trapped orbit and the effect of the assumed potential on these results. </p>
 
 										<p><span class="image right"><img src="images/apo_combo.png" alt="" /></span>
-										In this work, I develop a pipeline to perform stellar parameter and elemental abundance analysis for 319 stellar spectra from the VLT/GIRAFFE.
-										Using dynamical results from COMBS II, I separate the sample in to four groups which I associate with various Galactic structures: the inner bulge, the outer bulge, the halo and the disk.
-										I define a new term: \textit{chemical complexity}, which is used to compare the chemical dimensionality and mean strength of abundance correlations of different stellar populations.
-										I find that the inner and outer bulge populations are more chemically complex than the halo population.
-										This result suggests that the older bulge population has likely been enriched by a larger diversity of supernova events compared to the halo population.</p>
+										We verify our method with N-body simulations and find that the maximal extent of orbits in the bar is not always consistent with that of the potential used to calculate the orbits.
+										We calculate the orbital fundamental frequencies which allows us to cleanly select stars on bar-supporting orbits.
+										We take the 99th percentile of the apocenter distrubution of the selected bar stars as the bar length.
+										Although contamination by disk stars  is negligble, we do know that this selection will miss some bar-supporting orbit families which may lead us to underestimate the bar length.
+										Essentially what we find is that the only time the measured bar length from the orbits matches the bar length of the potential used, is when the potential is similar to the model from which the initial positions and velocities are extracted.  </p>
 
 										<p><span class="image left"><img src="apo_len.png" alt="" /></span>
-										I also find one inner bulge star whose chemistry may indicate a pair-instability supernova signature, along with two stars with chemistry consistent with second-generation globular cluster stars.
-										The pair-instability supernova signature is especially exciting, as a significant franction of the first stars are predicted to explode as pair-instability supernovae.
-										One of the most discrimantory chemical signatures of a pair-instability supernova is the high [Ca/Mg] ratio, which for our star is equal to 0.83 dex.
-										However, our star's [Si/Mg] abundances do not match predicitions, and its metallicity ([Fe/H]=-1.07 dex) is higher than expected for Population II stars.
-										Therefore, this star has likely been enirched by multiple supernova events, possibly including a pair-instability supernova. </p>
+										When we apply the orbit integration method to  ≈ 210,000 stars in APOGEE DR17 and  Gaia  eDR3 data, we find a self-consistent result only for potential models with a dynamical bar length of  ≈ 3.5 kpc and pattern speed of 39 km/s/kpc.
+										We find the Milky Way's trapped bar orbits extend out to only  ≈ 3.5 kpc, but there is also an overdensity of stars at the end of the bar out to 4.8 kpc which could be related to an attached spiral arm.
+										We also find that the measured orbital structure of the bar is strongly dependent on the properties of the assumed potential. </p>
 
 
 
@@ -255,40 +287,7 @@
 								</div>
 							</section>
 
-														<!-- COMBS -->
-														<section id="cemp" class="main">
 
-																<div class="content">
-																	<header class="major">
-																		<h2>Over 2 Million Carbon-Enhanced Metal-Poor stars from BP/RP Spectra in <i>Gaia</i> DR3</h2>
-																	<a href="https://arxiv.org/pdf/2206.08299.pdf">Full paper</a>
-																	</header>
-																	<p>
-
-
-																	Carbon-enhanced stars make-up almost a third of stars with [Fe/H]< -2, yet their origins are still poorly understood.
-																	It is thought that one type of carbon-enhanced metal-poor star (CEMP-no stars) may be inheritors of the nucleosynthetic material created by the first stars.
-																	By producing a large all-sky sample of CEMP stars I can investigate the frequency of CEMP-no stars throughout the Galaxy and thereby constrain properties of the early universe and the first stars through the distribution of their heirs.</p>
-
-																	<p><span class="image right"><img src="images/ext_noise.pdf" alt="" /></span>
-																	In this work, I develop a pipeline to perform stellar parameter and elemental abundance analysis for 319 stellar spectra from the VLT/GIRAFFE.
-																	Using dynamical results from COMBS II, I separate the sample in to four groups which I associate with various Galactic structures: the inner bulge, the outer bulge, the halo and the disk.
-																	I define a new term: \textit{chemical complexity}, which is used to compare the chemical dimensionality and mean strength of abundance correlations of different stellar populations.
-																	I find that the inner and outer bulge populations are more chemically complex than the halo population.
-																	This result suggests that the older bulge population has likely been enriched by a larger diversity of supernova events compared to the halo population.</p>
-
-																	<p><span class="image left"><img src="images/map.pdf" alt="" /></span>
-																	I also find one inner bulge star whose chemistry may indicate a pair-instability supernova signature, along with two stars with chemistry consistent with second-generation globular cluster stars.
-																	The pair-instability supernova signature is especially exciting, as a significant franction of the first stars are predicted to explode as pair-instability supernovae.
-																	One of the most discrimantory chemical signatures of a pair-instability supernova is the high [Ca/Mg] ratio, which for our star is equal to 0.83 dex.
-																	However, our star's [Si/Mg] abundances do not match predicitions, and its metallicity ([Fe/H]=-1.07 dex) is higher than expected for Population II stars.
-																	Therefore, this star has likely been enirched by multiple supernova events, possibly including a pair-instability supernova. </p>
-
-
-
-
-															</div>
-														</section>
 
 							<!-- COMBS -->
 							<section id="COMBSII" class="main">
